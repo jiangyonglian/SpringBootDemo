@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class HelloController {
 
     @RequestMapping("/init")
-    private String init(Model model) {
+    public String init(Model model) {
     	model.addAttribute("message", "Hello Thymeleaf!!");
         return "hello";
     }
