@@ -7,5 +7,5 @@ EXPOSE 8888
 
 RUN mkdir -p /usr/local/app
 COPY demo-0.0.1-SNAPSHOT.jar /usr/local/app/
-CMD [ "sh", "-c", "${JAVA_HOME}/bin/java","-jar","/usr/local/app/demo-0.0.1-SNAPSHOT.jar"]
+CMD [ "sh", "-c", "${JAVA_HOME}/bin/java -jar /usr/local/app/demo-0.0.1-SNAPSHOT.jar"]
 
