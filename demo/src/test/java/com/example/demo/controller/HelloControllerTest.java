@@ -27,4 +27,12 @@ public class HelloControllerTest {
         this.mockMvc.perform(get("/hello/init")).andDo(print())
             .andExpect(status().isOk());
     }
+    
+    // getリクエストでviewを指定し、httpステータスでリクエストの成否を判定
+    @Test
+    void second処理が走って200が返る() throws Exception {
+        // andDo(print())でリクエスト・レスポンスを表示
+        this.mockMvc.perform(get("/hello/second")).andDo(print())
+            .andExpect(status().isOk());
+    }
 }

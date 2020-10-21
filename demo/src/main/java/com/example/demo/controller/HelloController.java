@@ -14,4 +14,10 @@ public class HelloController {
     	model.addAttribute("message", "Hello Thymeleaf!!");
         return "hello";
     }
+    
+    @GetMapping("/second")
+    public String second(Model model) {
+    	model.addAttribute("message", "Hello Thymeleaf!!");
+        return "second";
+    }
 }
